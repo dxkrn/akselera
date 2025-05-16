@@ -6,70 +6,70 @@ class TextConfig {
   // NOTE: Heading Styles
   static TextStyle heading1TextStyle = TextStyle(
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w800,
+    fontWeight: FontWeight.w600,
     color: blackText,
     fontSize: 30.sp,
   );
 
   static TextStyle heading2TextStyle = TextStyle(
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
     color: blackText,
     fontSize: 24.sp,
   );
 
   static TextStyle heading3TextStyle = TextStyle(
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
     color: blackText,
     fontSize: 20.sp,
   );
 
   static TextStyle heading34TextStyle = TextStyle(
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
     color: blackText,
     fontSize: 18.sp,
   );
 
   static TextStyle heading4TextStyle = TextStyle(
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
     color: blackText,
     fontSize: 16.sp,
   );
 
   static TextStyle heading5TextStyle = TextStyle(
     fontFamily: 'Poppins',
-    fontWeight: FontWeight.w700,
+    fontWeight: FontWeight.w600,
     color: blackText,
     fontSize: 14.sp,
   );
 
   // NOTE: Sub Body
   static TextStyle subhead1TextStyle = TextStyle(
-    fontFamily: 'Poppins',
-    fontWeight: FontWeight.w600,
+    fontFamily: 'Urbanist',
+    fontWeight: FontWeight.w500,
     color: blackText,
     fontSize: 18.sp,
   );
 
   static TextStyle subhead1AltTextStyle = TextStyle(
-    fontFamily: 'Poppins',
-    fontWeight: FontWeight.w600,
+    fontFamily: 'Urbanist',
+    fontWeight: FontWeight.w500,
     color: blackText,
     fontSize: 16.sp,
   );
 
   static TextStyle subhead2TextStyle = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Urbanist',
     fontWeight: FontWeight.w500,
     color: blackText,
     fontSize: 14.sp,
   );
 
   static TextStyle subhead3TextStyle = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Urbanist',
     fontWeight: FontWeight.w500,
     color: blackText,
     fontSize: 12.sp,
@@ -77,21 +77,21 @@ class TextConfig {
 
   // NOTE: Content
   static TextStyle paragraph1TextStyle = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Urbanist',
     fontWeight: FontWeight.w400,
     color: blackText,
     fontSize: 16.sp,
   );
 
   static TextStyle paragraph2TextStyle = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Urbanist',
     fontWeight: FontWeight.w400,
     color: blackText,
     fontSize: 14.sp,
   );
 
   static TextStyle paragraph3TextStyle = TextStyle(
-    fontFamily: 'Poppins',
+    fontFamily: 'Urbanist',
     fontWeight: FontWeight.w400,
     color: blackText,
     fontSize: 12.sp,

@@ -13,7 +13,7 @@ void main() async {
 
   runApp(
     ScreenUtilInit(
-      designSize: const Size(390, 8444),
+      designSize: const Size(360, 640),
       builder: (context, child) => GetMaterialApp(
         title: "Application",
         initialRoute: AppPages.INITIAL,

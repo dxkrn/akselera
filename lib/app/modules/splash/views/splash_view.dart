@@ -16,7 +16,7 @@ class SplashView extends GetView<SplashController> {
       ),
       body: Center(
         child: Container(
-          color: primaryColor,
+          color: primaryUnion,
           child: const Text(
             'Splash',
             style: TextStyle(fontSize: 20),
