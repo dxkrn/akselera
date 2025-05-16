@@ -1,4 +1,3 @@
-import 'package:akselera/config/size_config.dart';
 import 'package:akselera/config/theme_config.dart';
 import 'package:akselera/utils/helpers/path_helper.dart';
 import 'package:flutter/material.dart';
@@ -8,16 +7,22 @@ import 'package:lottie/lottie.dart';
 class LoadingAnimation {
   static Future<dynamic> showLoadingAnimation() {
     return Get.dialog(
-      Container(
-        width: deviceWidth,
-        height: deviceHeight,
-        color: white,
-        child: Center(
-          child: LottieBuilder.asset(
-            setLottiePath('loading'),
+      Stack(
+        children: [
+          Positioned.fill(
+            child: Container(
+              color: white,
+              child: Center(
+                child: LottieBuilder.asset(
+                  setLottiePath('loading'),
+                ),
+              ),
+            ),
           ),
-        ),
+        ],
       ),
+      barrierDismissible: false,
+      useSafeArea: false,
     );
   }
 }
