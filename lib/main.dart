@@ -20,7 +20,10 @@ void main() async {
         getPages: AppPages.routes,
         debugShowCheckedModeBanner: false,
         initialBinding: SplashBinding(),
-        theme: ThemeData(fontFamily: 'Poppins'),
+        theme: ThemeData(
+          fontFamily: 'Poppins',
+          scaffoldBackgroundColor: const Color(0xffF7F7F7),
+        ),
       ),
     ),
   );

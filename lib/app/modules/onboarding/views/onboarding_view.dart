@@ -1,3 +1,4 @@
+import 'package:akselera/app/components/rounded_button.dart';
 import 'package:akselera/config/size_config.dart';
 import 'package:akselera/config/text_config.dart';
 import 'package:akselera/config/theme_config.dart';
@@ -76,27 +77,13 @@ class OnboardingView extends GetView<OnboardingController> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(24),
-                  child: Material(
-                    borderRadius: BorderRadius.circular(56),
-                    color: primaryUnion,
-                    child: InkWell(
-                      borderRadius: BorderRadius.circular(56),
-                      splashColor: white,
-                      onTap: () {
-                        controller.nextPage();
-                      },
-                      child: Container(
-                        width: double.infinity,
-                        height: 56,
-                        alignment: Alignment.center,
-                        child: Text(
-                          controller.currIndex.value < 2
-                              ? 'Selanjutnya'
-                              : 'Mulai Sekarang',
-                          style: subhead1TextStyle,
-                        ),
-                      ),
-                    ),
+                  child: RoundedButton(
+                    label: controller.currIndex.value < 2
+                        ? 'Selanjutnya'
+                        : 'Mulai Sekarang',
+                    ontap: () {
+                      controller.nextPage();
+                    },
                   ),
                 ),
               ],

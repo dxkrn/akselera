@@ -1,5 +1,7 @@
 // ignore_for_file: unnecessary_overrides
 
+import 'package:akselera/app/components/loading_animation.dart';
+import 'package:akselera/app/routes/app_pages.dart';
 import 'package:get/get.dart';
 
 class OnboardingController extends GetxController {
@@ -44,6 +46,14 @@ class OnboardingController extends GetxController {
   void nextPage() {
     if (currIndex < 2) {
       currIndex.value++;
+    } else {
+      LoadingAnimation.showLoadingAnimation();
+      Future.delayed(
+        const Duration(milliseconds: 800),
+        () {
+          Get.offAllNamed(Routes.HOME);
+        },
+      );
     }
   }
 }
