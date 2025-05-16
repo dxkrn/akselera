@@ -51,7 +51,7 @@ class OnboardingController extends GetxController {
       Future.delayed(
         const Duration(milliseconds: 800),
         () {
-          Get.offAllNamed(Routes.HOME);
+          Get.offAllNamed(Routes.HOME_NAV);
         },
       );
     }

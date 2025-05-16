@@ -1,3 +1,4 @@
+import 'package:akselera/app/modules/home/views/home_nav_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
@@ -22,6 +23,16 @@ class AppPages {
     GetPage(
       name: _Paths.HOME,
       page: () => const HomeView(),
+      binding: HomeBinding(),
+      transition: Transition.fadeIn,
+      curve: Curves.fastOutSlowIn,
+      transitionDuration: const Duration(
+        milliseconds: 500,
+      ),
+    ),
+    GetPage(
+      name: _Paths.HOME_NAV,
+      page: () => const HomeNavView(),
       binding: HomeBinding(),
       transition: Transition.fadeIn,
       curve: Curves.fastOutSlowIn,
