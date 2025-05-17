@@ -43,7 +43,17 @@ class LocationSection extends StatelessWidget {
                     urlTemplate:
                         'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
                     subdomains: const ['a', 'b', 'c'],
-                    userAgentPackageName: 'com.akselera.app',
+                    userAgentPackageName: 'com.akselera.unionspace',
+                  ),
+                  MarkerLayer(
+                    markers: [
+                      Marker(
+                        point: const LatLng(-7.7737342, 110.3836762),
+                        width: 40,
+                        height: 40,
+                        child: Icon(Icons.location_pin, color: primaryUnion),
+                      ),
+                    ],
                   ),
                 ],
               ),
