@@ -1,4 +1,4 @@
-package id.devigner.akselera
+package com.akselera.unionspace
 
 import io.flutter.embedding.android.FlutterActivity
 
