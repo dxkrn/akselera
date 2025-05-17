@@ -87,6 +87,7 @@ class HeroSection extends StatelessWidget {
                 ),
                 const CircleIconButton(
                   icon: 'icon-help',
+                  type: CircleButtonType.outlined,
                 ),
               ],
             ),

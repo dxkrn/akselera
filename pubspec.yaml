@@ -10,11 +10,14 @@ dependencies:
   dots_indicator: ^4.0.1
   flutter:
     sdk: flutter
+  flutter_map: ^8.1.1
   flutter_screenutil: ^5.9.3
   flutter_svg: ^2.1.0
   get: ^4.6.6
+  latlong2: ^0.9.1
   lottie: ^3.1.2
   persistent_bottom_nav_bar: ^6.2.1
+  readmore: ^3.0.0
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1
