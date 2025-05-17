@@ -1,7 +1,9 @@
+import 'package:akselera/config/size_config.dart';
+import 'package:akselera/utils/helpers/path_helper.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:akselera/config/theme_config.dart';
+import 'package:lottie/lottie.dart';
 
 import '../controllers/splash_controller.dart';
 
@@ -10,17 +12,12 @@ class SplashView extends GetView<SplashController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('SplashView'),
-        centerTitle: true,
-      ),
-      body: Center(
-        child: Container(
-          color: primaryUnion,
-          child: const Text(
-            'Splash',
-            style: TextStyle(fontSize: 20),
-          ),
+      body: SizedBox(
+        width: deviceWidth,
+        height: deviceHeight,
+        child: LottieBuilder.asset(
+          setLottiePath('splash'),
+          fit: BoxFit.cover,
         ),
       ),
     );
